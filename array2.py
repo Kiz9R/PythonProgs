@@ -1,4 +1,6 @@
 # line no 1 "from...." is an error only specific to Visual code so just run the code using COMMAND PROMPT
+
+
 #from numpy import *
 import numpy as py
 a = py.array([[1, 2, 3], [4, 5, 6]])
