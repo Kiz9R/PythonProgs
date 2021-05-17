@@ -1,6 +1,6 @@
-# using filter(),map(),reduce() function.... "u can use 'from func..' " it will work fine nevertheless
+# using filter(),map(),reduce() function....
 
-#from functools import reduce
+from functools import reduce
 
 
 def a(x):
@@ -19,9 +19,9 @@ n1 = [1, 2, 3, 4, 5, 6]
 even = list(filter(a, n1))
 double = list(map(b, even))
 sum = reduce(c, double)
-print(even)
-print(double)
-print(sum)
+print("filter:-", even)
+print("map:-", double)
+print("reduce:-", sum)
 
 #  or
 
@@ -30,6 +30,6 @@ num = [11, 12, 13, 14, 15, 16]
 evens = list(filter(lambda n: n % 2 == 0, num))
 doubles = list(map(lambda e: e*2, evens))
 sum1 = reduce(lambda r, r1: r + r1, doubles)
-print(evens)
-print(doubles)
-print(sum1)
+print("filter:-", evens)
+print("map:-", doubles)
+print("reduce:-", sum1)
